@@ -119,9 +119,12 @@ pub const RTE_EAL_NUMA_AWARE_HUGEPAGES: u32 = 1;
 pub const RTE_EAL_PMD_PATH: &'static [u8; 47usize] =
     b"/usr/local/lib/x86_64-linux-gnu/dpdk/pmds-20.0\0";
 pub const RTE_EXEC_ENV_LINUX: u32 = 1;
+pub const RTE_HAS_LIBFDT: u32 = 1;
 pub const RTE_HAS_LIBNUMA: u32 = 1;
 pub const RTE_IXGBE_INC_VECTOR: u32 = 1;
 pub const RTE_LIBRTE_ACL: u32 = 1;
+pub const RTE_LIBRTE_AESNI_GCM_PMD: u32 = 1;
+pub const RTE_LIBRTE_AESNI_MB_PMD: u32 = 1;
 pub const RTE_LIBRTE_AF_PACKET_PMD: u32 = 1;
 pub const RTE_LIBRTE_ARK_PMD: u32 = 1;
 pub const RTE_LIBRTE_ATLANTIC_PMD: u32 = 1;
@@ -129,11 +132,14 @@ pub const RTE_LIBRTE_AVP_PMD: u32 = 1;
 pub const RTE_LIBRTE_AXGBE_PMD: u32 = 1;
 pub const RTE_LIBRTE_BBDEV: u32 = 1;
 pub const RTE_LIBRTE_BITRATESTATS: u32 = 1;
+pub const RTE_LIBRTE_BNX2X_PMD: u32 = 1;
 pub const RTE_LIBRTE_BNXT_PMD: u32 = 1;
 pub const RTE_LIBRTE_BOND_PMD: u32 = 1;
 pub const RTE_LIBRTE_BPF: u32 = 1;
+pub const RTE_LIBRTE_BPF_ELF: u32 = 1;
 pub const RTE_LIBRTE_BUCKET_MEMPOOL: u32 = 1;
 pub const RTE_LIBRTE_CAAM_JR_PMD: u32 = 1;
+pub const RTE_LIBRTE_CCP_PMD: u32 = 1;
 pub const RTE_LIBRTE_CFGFILE: u32 = 1;
 pub const RTE_LIBRTE_CMDLINE: u32 = 1;
 pub const RTE_LIBRTE_COMPRESSDEV: u32 = 1;
@@ -178,8 +184,10 @@ pub const RTE_LIBRTE_IAVF_PMD: u32 = 1;
 pub const RTE_LIBRTE_ICE_PMD: u32 = 1;
 pub const RTE_LIBRTE_IFC_PMD: u32 = 1;
 pub const RTE_LIBRTE_IFPGA_BUS: u32 = 1;
+pub const RTE_LIBRTE_IPN3KE_PMD: u32 = 1;
 pub const RTE_LIBRTE_IPSEC: u32 = 1;
 pub const RTE_LIBRTE_IP_FRAG: u32 = 1;
+pub const RTE_LIBRTE_ISAL_PMD: u32 = 1;
 pub const RTE_LIBRTE_IXGBE_PMD: u32 = 1;
 pub const RTE_LIBRTE_JOBSTATS: u32 = 1;
 pub const RTE_LIBRTE_KNI: u32 = 1;
@@ -194,6 +202,8 @@ pub const RTE_LIBRTE_MEMIF_PMD: u32 = 1;
 pub const RTE_LIBRTE_MEMPOOL: u32 = 1;
 pub const RTE_LIBRTE_METER: u32 = 1;
 pub const RTE_LIBRTE_METRICS: u32 = 1;
+pub const RTE_LIBRTE_MLX4_PMD: u32 = 1;
+pub const RTE_LIBRTE_MLX5_PMD: u32 = 1;
 pub const RTE_LIBRTE_NET: u32 = 1;
 pub const RTE_LIBRTE_NETVSC_PMD: u32 = 1;
 pub const RTE_LIBRTE_NFP_PMD: u32 = 1;
@@ -212,6 +222,7 @@ pub const RTE_LIBRTE_OCTEONTX_EVENTDEV_PMD: u32 = 1;
 pub const RTE_LIBRTE_OCTEONTX_MEMPOOL: u32 = 1;
 pub const RTE_LIBRTE_OCTEONTX_PMD: u32 = 1;
 pub const RTE_LIBRTE_OPDL_EVENTDEV_PMD: u32 = 1;
+pub const RTE_LIBRTE_OPENSSL_PMD: u32 = 1;
 pub const RTE_LIBRTE_PCAP_PMD: u32 = 1;
 pub const RTE_LIBRTE_PCI: u32 = 1;
 pub const RTE_LIBRTE_PCI_BUS: u32 = 1;
@@ -223,6 +234,7 @@ pub const RTE_LIBRTE_PMD_BBDEV_NULL: u32 = 1;
 pub const RTE_LIBRTE_PMD_BBDEV_TURBO_SW: u32 = 1;
 pub const RTE_LIBRTE_PMD_DPAA2_CMDIF_RAWDEV: u32 = 1;
 pub const RTE_LIBRTE_PMD_DPAA2_QDMA_RAWDEV: u32 = 1;
+pub const RTE_LIBRTE_PMD_IFPGA_RAWDEV: u32 = 1;
 pub const RTE_LIBRTE_PMD_IOAT_RAWDEV: u32 = 1;
 pub const RTE_LIBRTE_PMD_NTB_RAWDEV: u32 = 1;
 pub const RTE_LIBRTE_PMD_OCTEONTX2_DMA_RAWDEV: u32 = 1;
@@ -248,6 +260,7 @@ pub const RTE_LIBRTE_STACK_MEMPOOL: u32 = 1;
 pub const RTE_LIBRTE_SW_EVENTDEV_PMD: u32 = 1;
 pub const RTE_LIBRTE_TABLE: u32 = 1;
 pub const RTE_LIBRTE_TAP_PMD: u32 = 1;
+pub const RTE_LIBRTE_TELEMETRY: u32 = 1;
 pub const RTE_LIBRTE_THUNDERX_PMD: u32 = 1;
 pub const RTE_LIBRTE_TIMER: u32 = 1;
 pub const RTE_LIBRTE_VDEV_BUS: u32 = 1;
@@ -259,6 +272,7 @@ pub const RTE_LIBRTE_VIRTIO_CRYPTO_PMD: u32 = 1;
 pub const RTE_LIBRTE_VIRTIO_PMD: u32 = 1;
 pub const RTE_LIBRTE_VMBUS_BUS: u32 = 1;
 pub const RTE_LIBRTE_VMXNET3_PMD: u32 = 1;
+pub const RTE_LIBRTE_ZLIB_PMD: u32 = 1;
 pub const RTE_MACHINE_CPUFLAG_AES: u32 = 1;
 pub const RTE_MACHINE_CPUFLAG_AVX: u32 = 1;
 pub const RTE_MACHINE_CPUFLAG_AVX2: u32 = 1;
@@ -273,12 +287,14 @@ pub const RTE_MACHINE_CPUFLAG_SSE4_2: u32 = 1;
 pub const RTE_MACHINE_CPUFLAG_SSSE3: u32 = 1;
 pub const RTE_MAX_ETHPORTS: u32 = 32;
 pub const RTE_MAX_LCORE: u32 = 128;
+pub const RTE_MAX_MEM_MB: u32 = 524288;
 pub const RTE_MAX_NUMA_NODES: u32 = 4;
 pub const RTE_MAX_VFIO_GROUPS: u32 = 64;
 pub const RTE_PORT_PCAP: u32 = 1;
 pub const RTE_TOOLCHAIN: &'static [u8; 4usize] = b"gcc\0";
 pub const RTE_TOOLCHAIN_GCC: u32 = 1;
-pub const RTE_VER_MINOR: u32 = 1;
+pub const RTE_USE_LIBBSD: u32 = 1;
+pub const RTE_VER_MINOR: u32 = 6;
 pub const RTE_VER_MONTH: u32 = 11;
 pub const RTE_VER_RELEASE: u32 = 99;
 pub const RTE_VER_SUFFIX: &'static [u8; 1usize] = b"\0";
@@ -292,7 +308,6 @@ pub const RTE_MAX_MEMSEG_PER_LIST: u32 = 8192;
 pub const RTE_MAX_MEM_MB_PER_LIST: u32 = 32768;
 pub const RTE_MAX_MEMSEG_PER_TYPE: u32 = 32768;
 pub const RTE_MAX_MEM_MB_PER_TYPE: u32 = 65536;
-pub const RTE_MAX_MEM_MB: u32 = 524288;
 pub const RTE_MAX_MEMZONE: u32 = 2560;
 pub const RTE_MAX_TAILQ: u32 = 32;
 pub const RTE_BACKTRACE: u32 = 1;
@@ -321,6 +336,7 @@ pub const RTE_LIBRTE_IP_FRAG_MAX_FRAG: u32 = 4;
 pub const RTE_MAX_LCORE_FREQS: u32 = 64;
 pub const RTE_SCHED_PORT_N_GRINDERS: u32 = 8;
 pub const RTE_KNI_PREEMPT_DEFAULT: u32 = 1;
+pub const RTE_PMD_PACKET_PREFETCH: u32 = 1;
 pub const RTE_PMD_QAT_MAX_PCI_DEVICES: u32 = 48;
 pub const RTE_PMD_QAT_COMP_SGL_MAX_SEGMENTS: u32 = 16;
 pub const RTE_PMD_QAT_COMP_IM_BUFFER_SIZE: u32 = 65536;
@@ -877,6 +893,16 @@ pub const RTE_ETH_TX_DESC_DONE: u32 = 1;
 pub const RTE_ETH_TX_DESC_UNAVAIL: u32 = 2;
 pub const RTE_CLASS_ANY_ID: u32 = 16777215;
 pub const RTE_KNI_NAMESIZE: u32 = 16;
+pub const RTE_HASH_ENTRIES_MAX: u32 = 1073741824;
+pub const RTE_HASH_NAMESIZE: u32 = 32;
+pub const RTE_HASH_LOOKUP_BULK_MAX: u32 = 64;
+pub const RTE_HASH_LOOKUP_MULTI_MAX: u32 = 64;
+pub const RTE_HASH_EXTRA_FLAGS_TRANS_MEM_SUPPORT: u32 = 1;
+pub const RTE_HASH_EXTRA_FLAGS_MULTI_WRITER_ADD: u32 = 2;
+pub const RTE_HASH_EXTRA_FLAGS_RW_CONCURRENCY: u32 = 4;
+pub const RTE_HASH_EXTRA_FLAGS_EXT_TABLE: u32 = 8;
+pub const RTE_HASH_EXTRA_FLAGS_NO_FREE_ON_DEL: u32 = 16;
+pub const RTE_HASH_EXTRA_FLAGS_RW_CONCURRENCY_LF: u32 = 32;
 pub type __u_char = ::std::os::raw::c_uchar;
 pub type __u_short = ::std::os::raw::c_ushort;
 pub type __u_int = ::std::os::raw::c_uint;
@@ -16351,6 +16377,56 @@ fn bindgen_test_layout_rte_flow_desc() {
         8usize,
         concat!("Alignment of ", stringify!(rte_flow_desc))
     );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_flow_desc>())).size as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_flow_desc),
+            "::",
+            stringify!(size)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_flow_desc>())).attr as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_flow_desc),
+            "::",
+            stringify!(attr)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_flow_desc>())).items as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_flow_desc),
+            "::",
+            stringify!(items)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_flow_desc>())).actions as *const _ as usize },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_flow_desc),
+            "::",
+            stringify!(actions)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_flow_desc>())).data as *const _ as usize },
+        40usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_flow_desc),
+            "::",
+            stringify!(data)
+        )
+    );
 }
 impl Default for rte_flow_desc {
     fn default() -> Self {
@@ -24210,6 +24286,56 @@ fn bindgen_test_layout_rte_kni_fifo() {
         8usize,
         concat!("Alignment of ", stringify!(rte_kni_fifo))
     );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_kni_fifo>())).write as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_kni_fifo),
+            "::",
+            stringify!(write)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_kni_fifo>())).read as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_kni_fifo),
+            "::",
+            stringify!(read)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_kni_fifo>())).len as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_kni_fifo),
+            "::",
+            stringify!(len)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_kni_fifo>())).elem_size as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_kni_fifo),
+            "::",
+            stringify!(elem_size)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_kni_fifo>())).buffer as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_kni_fifo),
+            "::",
+            stringify!(buffer)
+        )
+    );
 }
 impl Default for rte_kni_fifo {
     fn default() -> Self {
@@ -24943,6 +25069,253 @@ extern "C" {
 }
 extern "C" {
     pub fn rte_kni_close();
+}
+pub type hash_sig_t = u32;
+pub type rte_hash_function = ::std::option::Option<
+    unsafe extern "C" fn(key: *const ::std::os::raw::c_void, key_len: u32, init_val: u32) -> u32,
+>;
+pub type rte_hash_cmp_eq_t = ::std::option::Option<
+    unsafe extern "C" fn(
+        key1: *const ::std::os::raw::c_void,
+        key2: *const ::std::os::raw::c_void,
+        key_len: size_t,
+    ) -> ::std::os::raw::c_int,
+>;
+#[repr(C)]
+#[derive(Debug, Copy, Clone, PartialEq)]
+pub struct rte_hash_parameters {
+    pub name: *const ::std::os::raw::c_char,
+    pub entries: u32,
+    pub reserved: u32,
+    pub key_len: u32,
+    pub hash_func: rte_hash_function,
+    pub hash_func_init_val: u32,
+    pub socket_id: ::std::os::raw::c_int,
+    pub extra_flag: u8,
+}
+#[test]
+fn bindgen_test_layout_rte_hash_parameters() {
+    assert_eq!(
+        ::std::mem::size_of::<rte_hash_parameters>(),
+        48usize,
+        concat!("Size of: ", stringify!(rte_hash_parameters))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<rte_hash_parameters>(),
+        8usize,
+        concat!("Alignment of ", stringify!(rte_hash_parameters))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_hash_parameters>())).name as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_hash_parameters),
+            "::",
+            stringify!(name)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_hash_parameters>())).entries as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_hash_parameters),
+            "::",
+            stringify!(entries)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_hash_parameters>())).reserved as *const _ as usize },
+        12usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_hash_parameters),
+            "::",
+            stringify!(reserved)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_hash_parameters>())).key_len as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_hash_parameters),
+            "::",
+            stringify!(key_len)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_hash_parameters>())).hash_func as *const _ as usize },
+        24usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_hash_parameters),
+            "::",
+            stringify!(hash_func)
+        )
+    );
+    assert_eq!(
+        unsafe {
+            &(*(::std::ptr::null::<rte_hash_parameters>())).hash_func_init_val as *const _ as usize
+        },
+        32usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_hash_parameters),
+            "::",
+            stringify!(hash_func_init_val)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_hash_parameters>())).socket_id as *const _ as usize },
+        36usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_hash_parameters),
+            "::",
+            stringify!(socket_id)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<rte_hash_parameters>())).extra_flag as *const _ as usize },
+        40usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(rte_hash_parameters),
+            "::",
+            stringify!(extra_flag)
+        )
+    );
+}
+impl Default for rte_hash_parameters {
+    fn default() -> Self {
+        unsafe { ::std::mem::zeroed() }
+    }
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct rte_hash {
+    _unused: [u8; 0],
+}
+extern "C" {
+    pub fn rte_hash_create(params: *const rte_hash_parameters) -> *mut rte_hash;
+}
+extern "C" {
+    pub fn rte_hash_set_cmp_func(h: *mut rte_hash, func: rte_hash_cmp_eq_t);
+}
+extern "C" {
+    pub fn rte_hash_find_existing(name: *const ::std::os::raw::c_char) -> *mut rte_hash;
+}
+extern "C" {
+    pub fn rte_hash_free(h: *mut rte_hash);
+}
+extern "C" {
+    pub fn rte_hash_reset(h: *mut rte_hash);
+}
+extern "C" {
+    pub fn rte_hash_count(h: *const rte_hash) -> i32;
+}
+extern "C" {
+    pub fn rte_hash_add_key_data(
+        h: *const rte_hash,
+        key: *const ::std::os::raw::c_void,
+        data: *mut ::std::os::raw::c_void,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn rte_hash_add_key_with_hash_data(
+        h: *const rte_hash,
+        key: *const ::std::os::raw::c_void,
+        sig: hash_sig_t,
+        data: *mut ::std::os::raw::c_void,
+    ) -> i32;
+}
+extern "C" {
+    pub fn rte_hash_add_key(h: *const rte_hash, key: *const ::std::os::raw::c_void) -> i32;
+}
+extern "C" {
+    pub fn rte_hash_add_key_with_hash(
+        h: *const rte_hash,
+        key: *const ::std::os::raw::c_void,
+        sig: hash_sig_t,
+    ) -> i32;
+}
+extern "C" {
+    pub fn rte_hash_del_key(h: *const rte_hash, key: *const ::std::os::raw::c_void) -> i32;
+}
+extern "C" {
+    pub fn rte_hash_del_key_with_hash(
+        h: *const rte_hash,
+        key: *const ::std::os::raw::c_void,
+        sig: hash_sig_t,
+    ) -> i32;
+}
+extern "C" {
+    pub fn rte_hash_get_key_with_position(
+        h: *const rte_hash,
+        position: i32,
+        key: *mut *mut ::std::os::raw::c_void,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn rte_hash_free_key_with_position(
+        h: *const rte_hash,
+        position: i32,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn rte_hash_lookup_data(
+        h: *const rte_hash,
+        key: *const ::std::os::raw::c_void,
+        data: *mut *mut ::std::os::raw::c_void,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn rte_hash_lookup_with_hash_data(
+        h: *const rte_hash,
+        key: *const ::std::os::raw::c_void,
+        sig: hash_sig_t,
+        data: *mut *mut ::std::os::raw::c_void,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn rte_hash_lookup(h: *const rte_hash, key: *const ::std::os::raw::c_void) -> i32;
+}
+extern "C" {
+    pub fn rte_hash_lookup_with_hash(
+        h: *const rte_hash,
+        key: *const ::std::os::raw::c_void,
+        sig: hash_sig_t,
+    ) -> i32;
+}
+extern "C" {
+    pub fn rte_hash_hash(h: *const rte_hash, key: *const ::std::os::raw::c_void) -> hash_sig_t;
+}
+extern "C" {
+    pub fn rte_hash_lookup_bulk_data(
+        h: *const rte_hash,
+        keys: *mut *const ::std::os::raw::c_void,
+        num_keys: u32,
+        hit_mask: *mut u64,
+        data: *mut *mut ::std::os::raw::c_void,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn rte_hash_lookup_bulk(
+        h: *const rte_hash,
+        keys: *mut *const ::std::os::raw::c_void,
+        num_keys: u32,
+        positions: *mut i32,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn rte_hash_iterate(
+        h: *const rte_hash,
+        key: *mut *const ::std::os::raw::c_void,
+        data: *mut *mut ::std::os::raw::c_void,
+        next: *mut u32,
+    ) -> i32;
 }
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone, PartialEq)]
@@ -25839,6 +26212,12 @@ extern "C" {
     ) -> *const ::std::os::raw::c_char;
 }
 extern "C" {
+    pub fn pcap_set_protocol_linux(
+        arg1: *mut pcap_t,
+        arg2: ::std::os::raw::c_int,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
     pub fn pcap_open_live(
         arg1: *const ::std::os::raw::c_char,
         arg2: ::std::os::raw::c_int,
@@ -26025,6 +26404,11 @@ extern "C" {
     ) -> *const ::std::os::raw::c_char;
 }
 extern "C" {
+    pub fn pcap_datalink_val_to_description_or_dlt(
+        arg1: ::std::os::raw::c_int,
+    ) -> *const ::std::os::raw::c_char;
+}
+extern "C" {
     pub fn pcap_snapshot(arg1: *mut pcap_t) -> ::std::os::raw::c_int;
 }
 extern "C" {
@@ -26035,6 +26419,9 @@ extern "C" {
 }
 extern "C" {
     pub fn pcap_minor_version(arg1: *mut pcap_t) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn pcap_bufsize(arg1: *mut pcap_t) -> ::std::os::raw::c_int;
 }
 extern "C" {
     pub fn pcap_file(arg1: *mut pcap_t) -> *mut FILE;
@@ -26064,6 +26451,9 @@ extern "C" {
     pub fn pcap_dump_ftell(arg1: *mut pcap_dumper_t) -> ::std::os::raw::c_long;
 }
 extern "C" {
+    pub fn pcap_dump_ftell64(arg1: *mut pcap_dumper_t) -> i64;
+}
+extern "C" {
     pub fn pcap_dump_flush(arg1: *mut pcap_dumper_t) -> ::std::os::raw::c_int;
 }
 extern "C" {
@@ -26086,6 +26476,171 @@ extern "C" {
 }
 extern "C" {
     pub fn pcap_get_selectable_fd(arg1: *mut pcap_t) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn pcap_get_required_select_timeout(arg1: *mut pcap_t) -> *mut timeval;
+}
+#[repr(C)]
+#[derive(Debug, Copy, Clone, PartialEq)]
+pub struct pcap_rmtauth {
+    pub type_: ::std::os::raw::c_int,
+    pub username: *mut ::std::os::raw::c_char,
+    pub password: *mut ::std::os::raw::c_char,
+}
+#[test]
+fn bindgen_test_layout_pcap_rmtauth() {
+    assert_eq!(
+        ::std::mem::size_of::<pcap_rmtauth>(),
+        24usize,
+        concat!("Size of: ", stringify!(pcap_rmtauth))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<pcap_rmtauth>(),
+        8usize,
+        concat!("Alignment of ", stringify!(pcap_rmtauth))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<pcap_rmtauth>())).type_ as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(pcap_rmtauth),
+            "::",
+            stringify!(type_)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<pcap_rmtauth>())).username as *const _ as usize },
+        8usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(pcap_rmtauth),
+            "::",
+            stringify!(username)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<pcap_rmtauth>())).password as *const _ as usize },
+        16usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(pcap_rmtauth),
+            "::",
+            stringify!(password)
+        )
+    );
+}
+impl Default for pcap_rmtauth {
+    fn default() -> Self {
+        unsafe { ::std::mem::zeroed() }
+    }
+}
+extern "C" {
+    pub fn pcap_open(
+        source: *const ::std::os::raw::c_char,
+        snaplen: ::std::os::raw::c_int,
+        flags: ::std::os::raw::c_int,
+        read_timeout: ::std::os::raw::c_int,
+        auth: *mut pcap_rmtauth,
+        errbuf: *mut ::std::os::raw::c_char,
+    ) -> *mut pcap_t;
+}
+extern "C" {
+    pub fn pcap_createsrcstr(
+        source: *mut ::std::os::raw::c_char,
+        type_: ::std::os::raw::c_int,
+        host: *const ::std::os::raw::c_char,
+        port: *const ::std::os::raw::c_char,
+        name: *const ::std::os::raw::c_char,
+        errbuf: *mut ::std::os::raw::c_char,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn pcap_parsesrcstr(
+        source: *const ::std::os::raw::c_char,
+        type_: *mut ::std::os::raw::c_int,
+        host: *mut ::std::os::raw::c_char,
+        port: *mut ::std::os::raw::c_char,
+        name: *mut ::std::os::raw::c_char,
+        errbuf: *mut ::std::os::raw::c_char,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn pcap_findalldevs_ex(
+        source: *const ::std::os::raw::c_char,
+        auth: *mut pcap_rmtauth,
+        alldevs: *mut *mut pcap_if_t,
+        errbuf: *mut ::std::os::raw::c_char,
+    ) -> ::std::os::raw::c_int;
+}
+#[repr(C)]
+#[derive(Debug, Default, Copy, Clone, PartialEq)]
+pub struct pcap_samp {
+    pub method: ::std::os::raw::c_int,
+    pub value: ::std::os::raw::c_int,
+}
+#[test]
+fn bindgen_test_layout_pcap_samp() {
+    assert_eq!(
+        ::std::mem::size_of::<pcap_samp>(),
+        8usize,
+        concat!("Size of: ", stringify!(pcap_samp))
+    );
+    assert_eq!(
+        ::std::mem::align_of::<pcap_samp>(),
+        4usize,
+        concat!("Alignment of ", stringify!(pcap_samp))
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<pcap_samp>())).method as *const _ as usize },
+        0usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(pcap_samp),
+            "::",
+            stringify!(method)
+        )
+    );
+    assert_eq!(
+        unsafe { &(*(::std::ptr::null::<pcap_samp>())).value as *const _ as usize },
+        4usize,
+        concat!(
+            "Offset of field: ",
+            stringify!(pcap_samp),
+            "::",
+            stringify!(value)
+        )
+    );
+}
+extern "C" {
+    pub fn pcap_setsampling(p: *mut pcap_t) -> *mut pcap_samp;
+}
+extern "C" {
+    pub fn pcap_remoteact_accept(
+        address: *const ::std::os::raw::c_char,
+        port: *const ::std::os::raw::c_char,
+        hostlist: *const ::std::os::raw::c_char,
+        connectinghost: *mut ::std::os::raw::c_char,
+        auth: *mut pcap_rmtauth,
+        errbuf: *mut ::std::os::raw::c_char,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn pcap_remoteact_list(
+        hostlist: *mut ::std::os::raw::c_char,
+        sep: ::std::os::raw::c_char,
+        size: ::std::os::raw::c_int,
+        errbuf: *mut ::std::os::raw::c_char,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn pcap_remoteact_close(
+        host: *const ::std::os::raw::c_char,
+        errbuf: *mut ::std::os::raw::c_char,
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn pcap_remoteact_cleanup();
 }
 extern "C" {
     #[doc = " Error number value, stored per-thread, which can be queried after"]
